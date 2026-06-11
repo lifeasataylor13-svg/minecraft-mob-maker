@@ -1,0 +1,12 @@
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Build output
+*.mcaddon
+*.mcpack
+*.zip
+
+# Editor folders
+.vscode/
+.idea/

@@ -1,0 +1,17 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Glow Slug Behavior",
+    "description": "The brain of the Glow Slug",
+    "uuid": "980cc4b8-6206-40f5-aee6-2046f65afba2",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "6f398a83-8e8e-490a-977c-4938fe2c7d16",
+      "version": [1, 0, 0]
+    }
+  ]
+}
