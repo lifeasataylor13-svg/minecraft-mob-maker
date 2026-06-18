@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "name": "Glow Slug Looks",
-    "description": "The looks of the Glow Slug",
+    "name": "Grass Golem Looks",
+    "description": "The looks of the Grass Golem",
     "uuid": "7fed8d3c-2685-4713-a814-a3c29ab6afc9",
     "version": [1, 0, 0],
     "min_engine_version": [1, 21, 0]

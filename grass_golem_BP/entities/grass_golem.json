@@ -1,0 +1,23 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "mymob:grass_golem",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:type_family": { "family": ["grass_golem", "mob"] },
+      "minecraft:health": { "value": 20, "max": 20 },
+      "minecraft:movement": { "value": 0.25 },
+      "minecraft:movement.basic": {},
+      "minecraft:navigation.walk": { "can_walk": true },
+      "minecraft:physics": {},
+      "minecraft:jump.static": {},
+      "minecraft:collision_box": { "width": 1.375, "height": 2.375 },
+      "minecraft:behavior.random_stroll": { "priority": 1, "speed_multiplier": 1.0 },
+      "minecraft:behavior.look_at_player": { "priority": 2, "look_distance": 8 },
+      "minecraft:loot": { "table": "loot_tables/entities/grass_golem.json" }
+    }
+  }
+}

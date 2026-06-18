@@ -1,0 +1,13 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "mymob:grass_golem",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/grass_golem" },
+      "geometry": { "default": "geometry.grass_golem" },
+      "render_controllers": [ "controller.render.default" ],
+      "spawn_egg": { "base_color": "#5fae3a", "overlay_color": "#3b2f1a" }
+    }
+  }
+}
