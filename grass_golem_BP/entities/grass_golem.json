@@ -18,6 +18,60 @@
       "minecraft:behavior.random_stroll": { "priority": 1, "speed_multiplier": 1.0 },
       "minecraft:behavior.look_at_player": { "priority": 2, "look_distance": 8 },
       "minecraft:loot": { "table": "loot_tables/entities/grass_golem.json" }
-    }
-  }
-}
+    }   "grass_golem_search_and_dig": {
+        "minecraft:behavior.random_search_and_dig": {
+          "priority": 5,
+          "speed_multiplier": 1.25,
+          "find_valid_position_retries": 5,
+          "target_blocks": [
+            "minecraft:dirt",
+            "minecraft:coarse_dirt",
+            "minecraft:grass",
+            "minecraft:podzol",
+            "minecraft:dirt_with_roots",
+            "minecraft:moss_block",
+            "minecraft:pale_moss_block",
+            "minecraft:mud",
+            "minecraft:muddy_mangrove_roots"
+ ],
+          "goal_radius": 2.0,
+          "search_range_xz": 20,
+          "search_range_y": 3,
+          "cooldown_range": {
+            "min": 0.0,
+            "max": 0.0  },
+          "digging_duration_range": {
+            "min": 8.0,
+            "max": 10.0
+          },
+          "item_table": "loot_tables/gameplay/entities/sniffer_seeds.json",
+          "spawn_item_after_seconds": 6.0,
+          "spawn_item_pos_offset": 2.25,
+          "on_searching_start": {
+            "event": "on_searching_start",
+            "target": "self"
+           },
+          "on_fail_during_searching": {
+            "event": "on_fail_during_searching",
+            "target": "self"
+          },
+          "on_digging_start": {
+            "event": "on_digging_start",
+            "target": "self"
+          },
+          "on_item_found": {
+            "event": "on_item_found",
+            "target": "self"
+          },
+          "on_fail_during_digging": {
+            "event": "on_fail_during_digging",
+          },
+          "on_success": {
+            "event": "on_search_and_digging_success",
+ "minecraft:behavior.hurt_by_target": {
+        "entity_types": {
+          "filters": {
+            "operator": "not",
+            "test": "is_family",
+            "subject": "other",
+            "value": "creeper"            
